@@ -93,8 +93,8 @@ if (BUILD_SOTA_TOOLS)
 
   include(ExternalProject)
   ExternalProject_Add(garage-sign DEPENDS garage-deploy
-                      URL https://ats-tuf-cli-releases.s3-eu-central-1.amazonaws.com/cli-0.2.0-134-ge27cd8a.tgz
-                      URL_HASH SHA256=6c00814dc49566dffb703ffe873a7e1d87a7bc345b7830737d0712bf88a85ffd
+                      URL https://ats-tuf-cli-releases.s3-eu-central-1.amazonaws.com/cli-0.3.0-1-g9d6ef06.tgz
+                      URL_HASH SHA256=dc0ab2ceba3dc1417fc73cc08bd6cea9a3b6e43e2cb477d5009f91261856ce8d
                       CONFIGURE_COMMAND "" BUILD_COMMAND "" INSTALL_COMMAND "")
   ExternalProject_Get_Property(garage-sign SOURCE_DIR)
 
